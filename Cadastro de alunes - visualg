@@ -1,0 +1,165 @@
+Algoritmo "Cadastro de notas de alunos(a)"
+
+var
+nota,maior_notaA, maior_notaB, maior_notaC, maior_notaD, melhordetodos: real
+A,B,C,D, melhor_alunoA, melhor_alunoB, melhor_alunoC, melhor_alunoD, melhoralunogeral: caractere
+turmaA, turmaB, turmaC, turmaD: caractere
+contadorA, contadorB, contadorC, contadorD, alunos_aprovados: inteiro
+
+inicio
+
+escreval("-----------------------")
+escreval("Cadastro de notas dos alunos(a)")
+escreval("-----------------------")
+
+
+//------------------------------------------------------------------
+escreval("Pressione 'enter' para cadastro da turma 'A'")
+leia (turmaA)
+
+ contadorA <- 1
+ alunos_aprovados <- 0
+ maior_notaA <- 0
+ 
+para contadorA de 1 até 2 faça
+
+escreval ("Aluno ", contadorA)
+escreval ("Nome do aluno(a): ")
+leia (A)
+escreva("Nota: ")
+leia (nota)
+
+se (nota > maior_notaA) então
+maior_notaA <- nota
+melhor_alunoA <- A
+fimse
+se (nota >=7) então
+escreval("Estudante aprovado")
+alunos_aprovados <- alunos_aprovados + 1
+senão
+escreval ("Estudante reprovado")
+fimse
+
+fimpara
+
+escreval ("A maior nota da turma 'A' é de ", melhor_alunoA, " com ", maior_notaA)
+escreval ("A quantidade de alunos aprovados da turma 'A' é de: ", alunos_aprovados)
+
+//--------------------------------------------------
+escreval("Pressione 'enter' para cadastro da turma 'B'")
+leia (turmaB)
+
+ contadorB <- 1
+ alunos_aprovados <- 0
+ maior_notaB <- 0
+
+para contadorB de 1 até 2 faça
+
+escreval ("Aluno ", contadorB)
+escreval ("Nome do aluno(a): ")
+leia (B)
+escreva("Nota: ")
+leia (nota)
+
+se (nota > maior_notaB) então
+maior_notaB <- nota
+melhor_alunoB <- B
+fimse
+se (nota >=7) então
+escreval("Estudante aprovado")
+alunos_aprovados <- alunos_aprovados + 1
+senão
+escreval ("Estudante reprovado")
+fimse
+
+fimpara
+
+escreval ("A maior nota da turma 'B' é de ", melhor_alunoB, " com ", maior_notaB)
+escreval ("A quantidade de alunos aprovados da turma 'B' é de: ", alunos_aprovados)
+//------------------------------------------------------------------
+escreval("Pressione 'enter' para cadastro da turma 'C'")
+leia (turmaC)
+
+ contadorC <- 1
+ alunos_aprovados <- 0
+ maior_notaC <- 0
+
+para contadorC de 1 até 2 faça
+
+escreval ("Aluno ", contadorC)
+escreval ("Nome do aluno(a): ")
+leia (C)
+escreva("Nota: ")
+leia (nota)
+
+se (nota > maior_notaC) então
+maior_notaC <- nota
+melhor_alunoC <- C
+fimse
+se (nota >=7) então
+escreval("Estudante aprovado")
+alunos_aprovados <- alunos_aprovados + 1
+senão
+escreval ("Estudante reprovado")
+fimse
+
+fimpara
+
+escreval ("A maior nota da turma 'C' é de ", melhor_alunoC, " com ", maior_notaC)
+escreval ("A quantidade de alunos aprovados da turma 'C' é de: ", alunos_aprovados)
+
+//------------------------------------------------------------------
+escreval("Pressione 'enter' para cadastro da turma 'D'")
+leia (turmaD)
+
+ contadorD <- 1
+ alunos_aprovados <- 0
+ maior_notaD <- 0
+
+para contadorD de 1 até 2 faça
+
+escreval ("Aluno ", contadorD)
+escreval ("Nome do aluno(a): ")
+leia (D)
+escreva("Nota: ")
+leia (nota)
+
+se (nota > maior_notaD) então
+maior_notaD <- nota
+melhor_alunoD <- D
+fimse
+se (nota >=7) então
+escreval("Estudante aprovado")
+alunos_aprovados <- alunos_aprovados + 1
+senão
+escreval ("Estudante reprovado")
+fimse
+
+fimpara
+
+escreval ("A maior nota da turma 'D' é de ", melhor_alunoD, " com ", maior_notaD)
+escreval ("A quantidade de alunos aprovados da turma 'D' é de: ", alunos_aprovados)
+
+//--------------------------------------------------
+se (maior_notaA > maior_notaB) ou (maior_notaA > maior_notaC) ou (maior_notaA > maior_notaD) então
+melhordetodos <- maior_notaA
+melhoralunogeral <- melhor_alunoA
+fimse
+se (maior_notaB > maior_notaA) ou (maior_notaB > maior_notaC) ou (maior_notaB > maior_notaD) então
+melhordetodos <- maior_notaB
+melhoralunogeral <- melhor_alunoB
+fimse
+se (maior_notaC > maior_notaA) ou (maior_notaC > maior_notaB) ou (maior_notaC > maior_notaD) então
+melhordetodos <- maior_notaC
+melhoralunogeral <- melhor_alunoC
+fimse
+se (maior_notaD > maior_notaA) ou (maior_notaD > maior_notaB) ou (maior_notaD > maior_notaC) então
+melhordetodos <- maior_notaD
+melhoralunogeral <- melhor_alunoD
+fimse
+escreval ("A maior nota de todas é ", melhordetodos, ", de ", melhoralunogeral)
+
+
+
+
+fimalgoritmo

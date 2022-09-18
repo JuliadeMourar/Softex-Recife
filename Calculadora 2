@@ -1,0 +1,26 @@
+operacão=float(input('Qual operação você quer usar? Digite 1 para Soma, 2 para subtração, 3 para divisão, 4 para multiplicação ou 0 para sair ')) 
+if (operacão == 0):
+  print ("Essa operação não existe")
+
+while (operacão != 0):
+ num1=float(input('Digite o primeiro número: '))
+ num2=float(input('Digite o segundo número: '))
+
+ if operacão == 1: 
+  resultado = num1 + num2
+  print ('A soma de {} + {} = {}'.format(num1, num2, resultado))
+ elif operacão == 2: 
+  resultado = num1 - num2 
+  print("A subtração de {} - {} = {}".format(num1, num2, resultado))
+ elif operacão == 3: 
+  resultado = num1/num2
+  print("A divisão de {} % {} = {}".format(num1, num2, resultado))
+ elif operacão == 4: 
+  resultado = num1*num2
+  print ("A multiplicação de {} x {} = {}".format(num1, num2, resultado)) 
+
+ resposta=str(input('Digite sair para finalizar a operação. Senão aperte enter '))
+ if resposta == "sair":
+   print ("Fim do procedimento")
+   break
+    

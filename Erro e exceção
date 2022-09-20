@@ -1,0 +1,17 @@
+ano = False
+while (ano == False):
+
+  try:
+   nome = str(input('Digite seu nome completo: '))
+   ano = int(input('Digite o ano do seu nascimento: '))
+   idade = 2022-ano
+   if (ano >= 1922) and (ano <= 2021):
+     print(f'Seu nome completo é {nome}')
+     print(f'Sua idade é {idade:.1f} anos')
+   else:
+     ano = False
+     print('O ano que você digitou é inválido') 
+  except (ValueError, TypeError):
+     print('Tivemos um problema com os tipos de dados que você digitou.')
+  except(KeyboardInterrupt):
+     print('Não informou os dados')

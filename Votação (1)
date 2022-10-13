@@ -1,0 +1,68 @@
+#VOTAÇÃO
+voto_X = 0
+voto_Y = 0
+voto_Z = 0
+voto_B = 0
+total=0
+
+while total<3:
+    print("*" * 30)
+    print("CANDIDATO X: ", voto_X)
+    print("CANDIDATO Y: ", voto_Y)
+    print("CANDIDATO Z: ", voto_Z)
+    print("VOTOS EM BRANCO OU NULO: ", voto_B)
+    print('TOTAL DE VOTOS: ', total)
+    print("*" * 30)
+
+    voto = int(input('Digite o número do seu candidato: '))
+    if (voto == 889):
+        print('Seu candidato é X. Deseja confirmar? [S] ou [N] ')
+        input()
+        if 'S':
+          voto_X = voto_X + 1
+          total += 1
+          print('FIM')
+        elif 'N':
+            print('Voto não computado. Tente novamente')
+    elif voto == 847:
+        print('Seu candidato é Y. Deseja confirmar? S ou N ')
+        input()
+        if "S":
+            voto_Y = voto_Y + 1
+            total += 1
+            print('FIM')
+        elif "N":
+            print('Voto não computado. Tente novamente')
+    elif voto == 515:
+        print('Seu candidato é Z. Deseja confirmar? [S] ou [N] ')
+        input()
+        if "S":
+            voto_Z = voto_Z + 1
+            total += 1
+            print('FIM')
+        elif "N":
+            print('Voto não computado. Tente novamente')
+    elif voto == 0:
+        print('Voto em branco. Deseja confirmar? [S] ou [N] ')
+        input()
+        if "S":
+            voto_B = voto_B + 1
+            total += 1
+            print('FIM')
+        elif "N":
+            print('Voto não computado. Tente novamente')
+    else:
+        print('Voto anulado. Deseja confirmar? [S] ou [N] ')
+        input()
+        if "S":
+            voto_B = voto_B + 1
+            total += 1
+            print('FIM')
+        elif "N":
+            print('Voto não computado. Tente novamente')
+if (voto_X > voto_Y) and (voto_X > voto_Z):
+  print('O candidato X obteve mais votos')
+if (voto_Y > voto_X) and (voto_Y > voto_Z):
+  print('O candidato Y obteve mais votos')
+if (voto_Z > voto_Y) and (voto_Z > voto_X):
+  print('O candidato Y obteve mais votos')

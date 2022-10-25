@@ -1,0 +1,26 @@
+Bubble Sort
+Inteiro vetor[11]
+ Vetor[0] = 30
+Vetor[1] = 29
+Vetor [2] =7
+Vetor[3] = 2
+Vetor[4] = 10
+Vetor[5] = 14
+Vetor[6] = 5
+Vetor[7] = 8
+Vetor[8] = 9
+Vetor[9] = 4
+Vetor[10] = 25
+
+Para (inteiro  i = 0; i < 10 ; i++)
+Se (i==10)
+
+Para (inteiro  y = 10; y >= 0;  y--)
+Para (inteiro  x = 0; x < y ; x++)
+Se(vetor[x] > vetor [x+1])
+Inteiro bubble = vetor [x]
+Vetor [x] = vetor[x+1]
+Vetor[x+1] = bubble 
+
+Escreva(“bubble sort”)
+Para (inteiro  i = 0; i < 10 ; i++)

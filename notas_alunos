@@ -1,0 +1,14 @@
+import pandas as pd
+ 
+df = pd.read_csv("notas_alunos.csv")
+media = (df["nota_1"] + df["nota_2"]) / 2
+if(media >= 7):
+   print("Aprovado")
+elif(media < 7):
+   print("Reprovado")
+df = pd.read_csv("faltas_alunos.csv")
+faltas = 5
+if(faltas>=5)
+    print(“reprovado”)
+elif(faltas < 5)
+     print(“aprovado”)

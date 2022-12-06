@@ -1,0 +1,14 @@
+main (void)
+{
+int *p, a, i;
+...
+a = 30;
+p=(int *)malloc(a*sizeof(30));
+if (!p)
+for (i=0; i<a ; i++)
+p[i] = i*i;
+a = 100;
+for (i=30; i<a ; i++)
+p[i] = a*i*(i-6);
+...
+} 

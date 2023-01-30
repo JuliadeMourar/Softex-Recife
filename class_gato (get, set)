@@ -1,0 +1,17 @@
+class Gato():
+
+  def __init__(self, peso):
+    self.peso = peso
+
+  def get_peso(self):
+    return self.peso
+
+  def set_peso(self, segundo_peso):
+    self.peso = segundo_peso
+ 
+gato = Gato('5 kg')
+print('Peso do gato era: ', gato.get_peso())
+
+segundo_peso = input('Novo peso do gato: ')
+gato.set_peso(segundo_peso)
+print('Peso do gato é: ', gato.get_peso())
